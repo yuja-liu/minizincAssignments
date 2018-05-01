@@ -1,0 +1,38 @@
+{
+    "submissionURL": "http://123.255.65.101/autograder/api/index.php", 
+    "modelAssignments": [], 
+    "name": "Cryptarithm", 
+    "moocPasswordString": "Assignment token", 
+    "solutionAssignments": [
+        {
+            "model": "cuhkmelb.mzn", 
+            "data": "./data/empty.dzn", 
+            "id": "5mAwB", 
+            "timeout": "60", 
+            "name": "CUHK MELB LORE"
+        }, 
+        {
+            "model": "beanscrying.mzn", 
+            "data": "./data/empty.dzn", 
+            "id": "NveVR", 
+            "timeout": "60", 
+            "name": "Beans Crying"
+        }, 
+        {
+            "model": "caotest.mzn", 
+            "data": "./data/empty.dzn", 
+            "id": "walKr", 
+            "timeout": "60", 
+            "name": "Cao Test"
+        }, 
+        {
+            "model": "sevenpaces.mzn", 
+            "data": "./data/empty.dzn", 
+            "id": "tqr9L", 
+            "timeout": "60", 
+            "name": "Seven Paces"
+        }
+    ], 
+    "moocName": "CNMOOC", 
+    "assignmentKey": "oSGOyHvKEea_lw7vynm3bw"
+}

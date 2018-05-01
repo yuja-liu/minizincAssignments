@@ -1,0 +1,78 @@
+var 1..9: B;
+var 0..9: E;
+var 0..9: A;
+var 0..9: N;
+var 0..9: S;
+var 1..9: C;
+var 0..9: R;
+var 0..9: Y;
+var 0..9: I;
+var 0..9: G;
+
+constraint
+      20000 * B + 2000 * E + 200 * A + 20 * N + 2 * S
+    = 100000 * C + 10000 * R + 1000 * Y + 100 * I + 10 * N + G;
+include "alldifferent.mzn";
+constraint alldifferent([B,E,A,N,S,C,R,Y,I,G]);
+
+solve satisfy;
+var 1..9: C;
+var 0..9: A;
+var 0..9: O;
+var 1..9: Z;
+var 0..9: H;
+var 0..9: I;
+var 0..9: P;
+var 1..9: T;
+var 0..9: E;
+var 0..9: S;
+
+constraint
+      200 * C + 20 * A + 2 * O
+    + 100 * Z + 10 * H + I
+    + 10 * P + I
+    = 1000 * T + 100 * E + 10 * S + T;
+include "alldifferent.mzn";
+constraint alldifferent([C,A,O,Z,H,I,P,T,E,S]);
+constraint P = 3 * Z;
+constraint O = 0;
+
+solve satisfy;
+var 1..9: C;
+var 0..9: U;
+var 0..9: H;
+var 0..9: K;
+var 1..9: M;
+var 0..9: E;
+var 1..9: L;
+var 0..9: B;
+var 0..9: O;
+var 0..9: R;
+
+constraint    
+           1000 * C + 100 * U + 10 * H + K
+         + 1000 * M + 100 * E + 10 * L + B
+         = 1000 * L + 100 * O + 10 * R + E; 
+
+include "alldifferent.mzn";
+constraint alldifferent([C,U,H,K,M,E,L,B,O,R]);
+
+solve satisfy;
+
+var 1..9: S;
+var 0..9: E;
+var 1..9: V;
+var 0..9: N;
+var 1..9: P;
+var 0..9: A;
+var 0..9: C;
+var 0..9: R;
+
+constraint
+      10000 * S + 1000 * E + 100 * V + 10 * E + N
+    + 10000 * P + 1000 * A + 100 * C + 10 * E + S
+    = 10000 * V + 1000 * E + 100 * R + 10 * S + E;
+include "alldifferent.mzn";
+constraint alldifferent([S,E,V,N,P,A,C,R]);
+
+solve maximize 10000 * V + 1000 * E + 100 * R + 10 * S + E;
